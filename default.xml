@@ -4,6 +4,11 @@
   <remote  name="dnd"
            fetch="https://github.com/DarkNess-reDefined"
            revision="n7x" />
+	
+  <remote  name="unknown"
+           fetch="https://github.com/namdeptrai2003"
+           revision="n7x" />
+	
 
   <remote  name="laos"
            fetch="https://github.com/LineageOS" />
@@ -19,13 +24,23 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.2_r29" />
+           revision="refs/tags/android-7.1.2_r33" />
 
   <default revision="refs/heads/cm-14.1"
            remote="laos"
            sync-c="true"
            sync-j="4" />
 
+ <!-- KYLEPROXX -->
+ <project path="device/samsung/kyleproxx" name="namdeptrai2003/android_device_samsung_kyleproxx" remote="github" revision="d" />
+ <project path="kernel/samsung/kyleproxx" name="ishantvivek/android_kernel_samsung_kyleproxx" remote="github" revision="cm-14.1-3.4.113" />
+ <project path="vendor/samsung/kyleproxx" name="ishantvivek/android_vendor_samsung_kyleproxx" remote="github" revision="7.0" />
+ <!-- STUFF BUILD -->
+ <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" /> 
+ <project path="packages/apps/Floating" name="GeeksEmpireNet/Shortcuts" remote="github" revision="master" />
+ <project path="packages/apps/FastHub" name="k0shk0sh/FastHub" remote="github" revision="master" />
+ <project path="packages/apps/SystemUITuner" name="zacharee/SystemUITuner2" remote="github" revision="master" /> 
+	
   <!-- AOSP Projects -->
 
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
